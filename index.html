@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wallet3| הארנק שלך</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">תכונות</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">פעולות</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">ביקורות</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >יצירת חשבון</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          הרגע שבו
+          <!-- Green highlight effect -->
+          <span class="highlight">הארנק</span>
+          נהיה<br />
+          <span class="highlight">דיגיטלי</span>
+        </h1>
+        <h4>.חיסכון קל לחיים קלים יותר</h4>
+        <button class="btn--text btn--scroll-to">לעוד מידע &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist wallet items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">תכונות</h2>
+        <h3 class="section__header">כל מה שצריך במקום אחד</h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% דיגיטלי</h5>
+          <p>
+            זהו הארנק הראשון מסוגו בישראל אשר עוזר לכם ללמוד איך לנהל את הכסף
+            שלכם נכון
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">תראו את הכסף גדל</h5>
+          <p>.תראו איך הכסף שלכם מצטבר בזכות ממשק פשוט וניהול נכון</p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">אין צורך בכרטיסי אשראי</h5>
+          <p>
+            המערכת שלנו מאובטחת בסטנדרטים הכי גבוהיים בשוק ואיפלו אין לכם צורך
+            בשימוש בכרטיס אשראי
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">פעולות</h2>
+        <h3 class="section__header">מערכות חכמות בתצוגה פשוטה</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>העברות מידית
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>הלוואות מידית
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>סגירה מידית
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            העברת כספים בטוחה ומהירה בלי כרטיסי אשראי
+          </h5>
+          <p>
+            העברת כספים לא חייבת להיות מסובכת, העברה זריזה בלי אשראי ובלי תקלות
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            קנו את כל מה שתרצו עם הלוואות מידיות
+          </h5>
+          <p>
+            תקנו את כל מה שאתם צריכים ואת כל מה שאתם רוצים!, עם הריביות הקטנה
+            .ביותר בשוק שלא תרגישו שהן קיימות בכלל
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            .לא רוצים יותר את החשבון? אין בעיה נסגור אותו בשבילכם בלי בעיות
+          </h5>
+          <p>
+            ניתן לסגור את החשבון ללא תשלום נוסף בתנאי שאין לכם.ן שום הלוואה
+            פתוחה
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--reviews">
+        <h2 class="section__description">עדיין לא בטוחים?</h2>
+        <h3 class="section__header">
+          כבר למעל מליון לקוחות ישראלים יש את הארנק המפורסם ביותר במזרח התיכון
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="reviews">
+            <h5 class="reviews__header">ההחלטה הכלכלית הכי טובה שהייתה לי</h5>
+            <blockquote class="reviews__text"></blockquote>
+            האפליקציה הזו פשוט הדהימה אותי, פשוט מדהים
+            <address class="reviews__author">
+              <img src="img/user-1.jpg" alt="" class="reviews__photo" />
+              <h6 class="reviews__name">אביב הדר</h6>
+              <p class="reviews__location">אילת</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="reviews">
+            <h5 class="reviews__header">...הצעד האחרון ללהיות חסרי ארנק</h5>
+            <blockquote class="reviews__text"></blockquote>
+            !ארנק דיגיטלי, מדהים
+            <address class="reviews__author">
+              <img src="img/user-2.jpg" alt="" class="reviews__photo" />
+              <h6 class="reviews__name">מלי פרץ</h6>
+              <p class="reviews__location">תל אביב</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="reviews">
+            <h5 class="reviews__header">סוף סוף חופש מארנקים</h5>
+            <blockquote class="reviews__text"></blockquote>
+            מי צריך ארנק כשיש לי את זה
+            <address class="reviews__author">
+              <img src="img/user-3.jpg" alt="" class="reviews__photo" />
+              <h6 class="reviews__name">אלון דלל</h6>
+              <p class="reviews__location">רחובות</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          .הרגע הנכון ביותר שהיה להצטרף אלינו היה אתמול, הרגע השני הוא עכשיו
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">צרו משתמש בחינם עוד היום</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">אודות</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">מחירים</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">תנאי שימוש</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">פרטיות</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">קריירה</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">בלוג</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">צרו קשר</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">&copy;</p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modalwhen __header">
+        צרו את הארנק שלכם <br />
+        בתוך <span class="highlight">5 דקות בלבד</span>
+      </h2>
+      <form class="modal__form">
+        <label>שם פרטי</label>
+        <input type="text" />
+        <label>שם משפחה</label>
+        <input type="text" />
+        <label>כתות מייל</label>
+        <input type="email" />
+        <button class="btn">המשיכו &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
